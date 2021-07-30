@@ -92,6 +92,7 @@ h1{
     display: flex;
     justify-content: space-evenly;
     padding-top: 20px;
+    font-size: 25px;
 }
 
 h2{
@@ -104,4 +105,8 @@ h2{
 hr{
     color: blue;
     border: 2px solid blue; 
+}
+h5{
+    color: blue;
+    font-size: 30px;
 }
