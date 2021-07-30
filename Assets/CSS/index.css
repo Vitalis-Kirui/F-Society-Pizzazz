@@ -133,6 +133,22 @@ ul{
 
 /* end of tour styles */
 
+/* form styles */
+
+#shadow{
+    margin: 23px;
+}
+
+form{
+    padding-right: 200px;
+    padding-left: 200px;
+    font-size: 25px;
+}
+
+::placeholder{
+    font-size: 20px;
+}
+
 /* footer styles */
 
 footer {
@@ -151,7 +167,7 @@ footer {
 }
 
 .fa:hover {
-    color: rgb(194, 179, 47);
+    color: rgb(216, 197, 25);
 }
 
 /* end of footer code */
