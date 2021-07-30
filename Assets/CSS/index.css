@@ -118,3 +118,14 @@ h5{
     color: blue;
     font-size: 30px;
 }
+
+h4{
+    color: rgb(13, 158, 13);
+}
+
+ul{
+    color: rgb(247, 0, 255);
+}
+.cost{
+    color: darkblue;
+}
