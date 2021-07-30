@@ -13,6 +13,7 @@ body{
 }
 
 .container{
+    width: 100%;
     background-color: rgb(238, 232, 225);
 }
 
@@ -131,3 +132,26 @@ ul{
 }
 
 /* end of tour styles */
+
+/* footer styles */
+
+footer {
+    background-color: rgb(107, 107, 133);
+    color: white;
+    text-align: center;
+    padding: 5px;
+    overflow: hidden;
+    font-size: 25px;
+}
+
+.fa {
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.fa:hover {
+    color: rgb(194, 179, 47);
+}
+
+/* end of footer code */
