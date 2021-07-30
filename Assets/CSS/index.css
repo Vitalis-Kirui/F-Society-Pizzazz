@@ -149,6 +149,11 @@ form{
     font-size: 20px;
 }
 
+.heading, #heading{
+    color: rgb(25, 14, 172);
+    font-weight: 600;
+}
+
 /* footer styles */
 
 footer {

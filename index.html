@@ -196,13 +196,13 @@
                 <!-- Name -->
 
                 <div class="mb-3">
-                    <label for="formGroupExampleInput" class="form-label">Name:</label>
+                    <label for="formGroupExampleInput" class="form-label" id="heading">Name:</label>
                     <input type="text" class="form-control" id="customerName" placeholder="Enter your Name">
                 </div>
 
                 <!-- Type of Pizza -->
 
-                <label for="name">Select type of Pizza:</label>
+                <label for="name" class="heading">Select type of Pizza:</label>
                 <select class="form-select" aria-label="Default select example" id="types">
                     <option selected disabled hidden>Open this select pizza</option>
                     <option value="1">Cheese Pizza</option>
@@ -215,7 +215,7 @@
 
                 <!-- size of the Pizza -->
 
-                <label for="name">Select Size</label>
+                <label for="name" class="heading">Select Size</label>
                         <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg" id="sizes">
                             <option selected hidden disabled>Open here to select the size of the Pizza</option>
                             <option value="1">Small</Small></option>
@@ -225,7 +225,7 @@
 
                         <!-- crust selection -->
 
-                        <label for="name">Select Crust</label>
+                        <label for="name" class="heading">Select Crust</label>
                         <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg" id="crusts">
                             <option selected hidden disabled>Open here to select the kind of crust you want</option>
                             <option value="1">Crispy</Small></option>
@@ -235,7 +235,7 @@
 
                         <!-- toppings selection -->
 
-                        <label for="name">Select Toppings</label>
+                        <label for="name" class="heading">Select Toppings</label>
                         <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg" id="toppings">
                             <option selected hidden disabled>Open here to select the kind of topping you want</option>
                             <option value="1">Olive</Small></option>
@@ -246,12 +246,12 @@
 
                         <!-- Quantity -->
 
-                        <label for="name">Quantity</label>
+                        <label for="name" class="heading">Quantity</label>
                         <input type="number" class="form-control form-select-lg mb-3" placeholder="Example: 3" name="" id="quantity">
 
                         <!-- Delivery -->
 
-                        <label for="deliver">Do you want your order delivered?</label>
+                        <label for="deliver" class="heading">Do you want your order delivered?</label>
                         <div>
                             <input type="radio" id="yes" name="deliver">
                             <label for="no">Yes</label>
@@ -261,7 +261,7 @@
 
                         <!-- Location input -->
 
-                        <label for="name">Please enter your Location</label>
+                        <label for="name" class="heading">Please enter your Location</label>
                         <input type="text" class="form-control form-select-lg mb-3" placeholder="Example: Prestige" name="" id="location">
 
             </form>
