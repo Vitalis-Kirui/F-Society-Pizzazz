@@ -9,6 +9,7 @@ html{
 body{
     width: 100%;
     background-color: rgb(226, 226, 226);
+    /* font-family: 'Charm', cursive; */
 }
 
 .container{
@@ -89,6 +90,13 @@ h1{
 /* tour styles */
 
 .tour1{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    font-size: 25px;
+}
+
+.tour2{
     display: flex;
     justify-content: space-evenly;
     padding-top: 20px;
