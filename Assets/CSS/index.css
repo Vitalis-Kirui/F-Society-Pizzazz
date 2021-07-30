@@ -2,8 +2,17 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
+html{
+    width: 100%;
+}
+
 body{
     width: 100%;
+    background-color: rgb(226, 226, 226);
+}
+
+.container{
+    background-color: rgb(238, 232, 225);
 }
 
 /* Stylings for the navigation bar and its content */
@@ -11,7 +20,7 @@ body{
 header {
     display: flex;
     justify-content: space-around;
-    background-color: #6dbb7a;
+    background-color: #a57e96;
     padding-top: 30px;
     padding-bottom: 10px;
     position: sticky;
@@ -30,8 +39,7 @@ nav li {
 .name{
     font-weight: 600;
     font-size: 28px;
-    color: rgb(194, 29, 29);
-    /* font-family: 'Faster One', cursive; */
+    color: rgb(230, 226, 17);
 }
 
 nav ul a{
@@ -51,3 +59,28 @@ nav ul a{
 }
 
 /* End of Navigation Bar stylings */
+
+/* introduction styles */
+
+.introduction{
+    font-size: 25px;
+    padding-top: 20px;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Faster One', cursive;
+    color: rgb(129, 38, 110);
+    font-size: 70px;
+}
+
+.stroke{
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+.nameIntro{
+    color: rgb(20, 190, 220);
+}
+
+/* End of introduction styles */
