@@ -1,0 +1,53 @@
+*{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+    width: 100%;
+}
+
+/* Stylings for the navigation bar and its content */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #6dbb7a;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+.name{
+    font-weight: 600;
+    font-size: 28px;
+    color: rgb(194, 29, 29);
+    /* font-family: 'Faster One', cursive; */
+}
+
+nav ul a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+#navlist {
+    float: right;
+}
+
+#navlist a:hover {
+    color: rgb(251, 255, 0);
+    text-decoration:underline 2px solid black;
+}
+
+/* End of Navigation Bar stylings */
