@@ -170,4 +170,25 @@ Order.prototype.toppingPrice = function(){
 
 };
 
-//Pizza sizes pricing
+//Pizza sizes pricing basing on type selected
+
+Order.prototype.pizzaPrice = function(){
+
+    //Cheese pizza
+    if(this.type == 1){
+
+        if(this.size == 1){
+            return 500;
+        };
+
+        if(this.size == 2){
+            return 1000;
+        };
+
+        if(this.size == 3){
+            return 1500;
+        };
+
+    };
+
+};
