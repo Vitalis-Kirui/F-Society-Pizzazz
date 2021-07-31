@@ -89,7 +89,7 @@
                     <h5 class="card-title">Cheese Pizza</h5>
                     <p class="card-text">Pizza cheese encompasses several varieties and types of cheeses and dairy
                         products</p>
-                        <hr>
+                    <hr>
                     <h4>Availabe sizes and Prices</h4>
                     <ul>
                         <li>Small - <span class="cost">Ksh. 500</span></li>
@@ -106,7 +106,7 @@
                     <h5 class="card-title">Veggie Pizza</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
-                        <hr>
+                    <hr>
                     <h4>Availabe sizes and Prices</h4>
                     <ul>
                         <li>Small - <span class="cost">Ksh. 750</span></li>
@@ -123,7 +123,7 @@
                     <h5 class="card-title">Pepperoni Pizza</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
-                        <hr>
+                    <hr>
                     <h4>Availabe sizes and Prices</h4>
                     <ul>
                         <li>Small - <span class="cost">Ksh. 900</span></li>
@@ -144,7 +144,7 @@
                     <h5 class="card-title">Meat Pizza</h5>
                     <p class="card-text">Pizza cheese encompasses several varieties and types of cheeses and dairy
                         products</p>
-                        <hr>
+                    <hr>
                     <h4>Availabe sizes and Prices</h4>
                     <ul>
                         <li>Small - <span class="cost">Ksh. 600</span></li>
@@ -161,7 +161,7 @@
                     <h5 class="card-title">Buffalo Pizza</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
-                        <hr>
+                    <hr>
                     <h4>Availabe sizes and Prices</h4>
                     <ul>
                         <li>Small - <span class="cost">Ksh. 1200</span></li>
@@ -178,7 +178,7 @@
                     <h5 class="card-title">Hawaiian Pizza</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
-                        <hr>
+                    <hr>
                     <h4>Availabe sizes and Prices</h4>
                     <ul>
                         <li>Small - <span class="cost">Ksh. 450</span></li>
@@ -197,7 +197,7 @@
 
         <div class="shadow-lg p-3 mb-5 bg-body rounded" id="shadow">
 
-            <form class="makingOrder">
+            <form class="makingOrder" onsubmit="validateOrder()">
 
                 <!-- Name -->
 
@@ -217,62 +217,64 @@
                     <option value="4">Meat Pizza</option>
                     <option value="5">Buffalo Pizza</option>
                     <option value="6">Hawaiian Pizza</option>
-                  </select>
+                </select>
 
                 <!-- size of the Pizza -->
 
                 <label for="name" class="heading">Select Size</label>
-                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg" id="sizes">
-                            <option selected hidden disabled>Open here to select the size of the Pizza</option>
-                            <option value="1">Small</Small></option>
-                            <option value="2">Medium</option>
-                            <option value="3">Large</option>
-                        </select>
+                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg" id="sizes">
+                    <option selected hidden disabled>Open here to select the size of the Pizza</option>
+                    <option value="1">Small</Small></option>
+                    <option value="2">Medium</option>
+                    <option value="3">Large</option>
+                </select>
 
-                        <!-- crust selection -->
+                <!-- crust selection -->
 
-                        <label for="name" class="heading">Select Crust</label>
-                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg" id="crusts">
-                            <option selected hidden disabled>Open here to select the kind of crust you want</option>
-                            <option value="1">Crispy</Small></option>
-                            <option value="2">Stuffed</option>
-                            <option value="3">Gluten free</option>
-                        </select>
+                <label for="name" class="heading">Select Crust</label>
+                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg" id="crusts">
+                    <option selected hidden disabled>Open here to select the kind of crust you want</option>
+                    <option value="1">Crispy</Small></option>
+                    <option value="2">Stuffed</option>
+                    <option value="3">Gluten free</option>
+                </select>
 
-                        <!-- toppings selection -->
+                <!-- toppings selection -->
 
-                        <label for="name" class="heading">Select Toppings</label>
-                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg" id="toppings">
-                            <option selected hidden disabled>Open here to select the kind of topping you want</option>
-                            <option value="1">Olive</Small></option>
-                            <option value="2">Sausage</option>
-                            <option value="3">Bacon</option>
-                            <option value="4">Green Pepper</option>
-                        </select>
+                <label for="name" class="heading">Select Toppings</label>
+                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg" id="toppings">
+                    <option selected hidden disabled>Open here to select the kind of topping you want</option>
+                    <option value="1">Olive</Small></option>
+                    <option value="2">Sausage</option>
+                    <option value="3">Bacon</option>
+                    <option value="4">Green Pepper</option>
+                </select>
 
-                        <!-- Quantity -->
+                <!-- Quantity -->
 
-                        <label for="name" class="heading">Quantity</label>
-                        <input type="number" class="form-control form-select-lg mb-3" placeholder="Example: 3" name="" id="quantity">
+                <label for="name" class="heading">Quantity</label>
+                <input type="number" class="form-control form-select-lg mb-3" placeholder="Example: 3" name=""
+                    id="quantity">
 
-                        <!-- Delivery -->
+                <!-- Delivery -->
 
-                        <label for="deliver" class="heading">Do you want your order delivered?</label>
-                        <div>
-                            <input type="radio" id="yes" name="deliver">
-                            <label for="no">Yes</label>
-                            <input type="radio" id="no" name="deliver">
-                            <label for="no">No</label>
-                        </div>
+                <label for="deliver" class="heading">Do you want your order delivered?</label>
+                <div>
+                    <input type="radio" id="yes" name="deliver">
+                    <label for="no">Yes</label>
+                    <input type="radio" id="no" name="deliver">
+                    <label for="no">No</label>
+                </div>
 
-                        <!-- Location input -->
+                <!-- Location input -->
 
-                        <label for="name" class="heading">Please enter your Location</label>
-                        <input type="text" class="form-control form-select-lg mb-3" placeholder="Example: Prestige" name="" id="location">
+                <label for="name" class="heading">Please enter your Location</label>
+                <input type="text" class="form-control form-select-lg mb-3" placeholder="Example: Prestige" name=""
+                    id="location">
 
-                        <!-- submit button -->
+                <!-- submit button -->
 
-                        <button type="submit">Place the Order</button>
+                <button type="submit">Place the Order</button>
 
             </form>
 
