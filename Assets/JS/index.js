@@ -191,4 +191,21 @@ Order.prototype.pizzaPrice = function(){
 
     };
 
+    //Veggie pizza
+    if(this.type == 2){
+
+        if(this.size == 1){
+            return 750;
+        };
+
+        if(this.size == 2){
+            return 1200;
+        };
+
+        if(this.size == 3){
+            return 1200;
+        };
+
+    };
+
 };
