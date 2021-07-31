@@ -208,4 +208,21 @@ Order.prototype.pizzaPrice = function(){
 
     };
 
+    //Pepperoni pizza
+    if(this.type == 3){
+
+        if(this.size == 1){
+            return 900;
+        };
+
+        if(this.size == 2){
+            return 1400;
+        };
+
+        if(this.size == 3){
+            return 2300;
+        };
+
+    };
+
 };
