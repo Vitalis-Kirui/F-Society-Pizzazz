@@ -28,4 +28,13 @@ var validateOrder = function(){
 
     };
 
+    // sizes of pizza validation
+
+    if(orders.sizes.value == 0){
+
+        alert("Select the size of pizza you want to proceed!")
+        return false;
+
+    };
+
 };
