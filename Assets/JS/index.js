@@ -277,8 +277,23 @@ $(document).ready(function () {
 
         var payableAmount = (newCustomer.pizzaPrice() + newCustomer.crustPrice() + newCustomer.toppingPrice()) * amount;
 
-        alert(payableAmount);
+            $("#orderingName").text($("input#customerName").val());
+            $("#appendingName").text($('#types option:selected').text());
+            $("#appendingSize").text($('#sizes option:selected').text());
+            $("#appendingCrust").text($('#crusts option:selected').text());
+            $("#appendingTopping").text($('#toppings option:selected').text());
+            $("#appendingQuantity").text($("input#quantity").val());
+            $("#appendingTotalCost").text(payableAmount);
+    
+    
+        $("#confirmOrder").click(function(){
+    
+            alert("You order was SUCCESSFULLY placed. \nIt's going to be delivered to you in no time. \nThanks for choosing us.")
+    
+        });
 
     });
+
+    
 
 });

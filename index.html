@@ -273,7 +273,29 @@
 
                 <!-- submit button -->
 
-                <button type="submit">Place the Order</button>
+                <button type="submit" id="submit">Place the Order</button>
+
+                <!-- Order Display -->
+
+                <div class="displayScreen">
+
+                    <h3>BREAKDOWN OF YOUR ORDER</h3>
+
+                    <P>Hi <span id="orderingName">customer name,</span> here is the breakdown of your order.</P>
+
+                    <ul class="orderCost">
+                        <li><strong>Pizza Type: </strong><span id="appendingName">Name of Pizza comes here</span> </li>
+                        <li><strong>Pizza Size: </strong><span id="appendingSize">Size of Pizza comes here</span> </li>
+                        <li><strong>Crust: </strong><span id="appendingCrust">Crust name comes here</span> </li>
+                        <li><strong>Toppings: </strong><span id="appendingTopping">Toppings comes here</span> </li>
+                        <li><strong>Quantity: </strong><span id="appendingQuantity">Number of Pizza comes here</span> </li>
+                        <li><strong>Delivery Fee: </strong>Ksh. <span id="deliveryFee">250</span></li>
+                        <li><strong>Total Cost: </strong>Ksh. <span id="appendingTotalCost">Cost of pizza comes here</span> </li>
+                    </ul>
+
+                    <button id="confirmOrder">Confirm Order</button>
+
+                </div>
 
             </form>
 

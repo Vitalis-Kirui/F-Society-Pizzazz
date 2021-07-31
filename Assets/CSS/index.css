@@ -163,6 +163,33 @@ button{
     padding: 5px;
 }
 
+/* displaying order */
+
+.displayScreen{
+    padding: 40px;
+}
+
+h3{
+    font-weight: 600;
+    color: brown;
+}
+
+#orderingName{
+    color: blueviolet;
+    font-weight: 600;
+}
+
+#appendingName, #appendingSize, 
+#appendingTotalCost, #appendingCrust, 
+#appendingTopping, #appendingQuantity, #deliveryFee{
+    font-style: italic;
+    color: rgb(9, 130, 160);
+}
+
+.orderCost{
+    color: black;
+}
+
 /* footer styles */
 
 footer {
