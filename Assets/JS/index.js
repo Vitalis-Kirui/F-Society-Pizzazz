@@ -73,4 +73,22 @@ var validateOrder = function(){
 
     };
 
+    // Location validation
+
+    var deliveryLocation = document.getElementById("location").value;
+
+    if(deliveryLocation == ""){
+
+        alert("Provide the location. \nThis is where your pizza(s) will be delivered to.")
+        return false;
+
+    };
+
+    if(deliveryLocation.length < 5){
+
+        alert("Provide a valid name! \nAtleast 5 characters to make it easy for deliveries.")
+        return false;
+
+    };
+
 };
