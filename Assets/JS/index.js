@@ -9,14 +9,12 @@ var validateOrder = function () {
 
         alert("Please enter your name.")
         return false;
-
     };
 
     if (name.length < 3) {
 
         alert("Please provide a valid name. \nAtleast 3 characters.")
         return false;
-
     };
 
     // type of pizza validation
@@ -25,7 +23,6 @@ var validateOrder = function () {
 
         alert("Select the type of pizza(s) you want to proceed!")
         return false;
-
     };
 
     // sizes of pizza validation
@@ -34,7 +31,6 @@ var validateOrder = function () {
 
         alert("Select the size of pizza(s) you want to proceed!")
         return false;
-
     };
 
     //crust selection validation
@@ -43,7 +39,6 @@ var validateOrder = function () {
 
         alert("Select the type of crust on your pizza(s) you want to proceed!")
         return false;
-
     };
 
     //toppings select validation
@@ -52,7 +47,6 @@ var validateOrder = function () {
 
         alert("Select the type of toppings on your pizza(s) you want to proceed!")
         return false;
-
     };
 
     // Quantity validation
@@ -63,14 +57,12 @@ var validateOrder = function () {
 
         alert("Please enter the number of pizza(s) you want.")
         return false;
-
     };
 
     if (numberOfPizza < 1) {
 
         alert("Please provide a valid amount of pizza(s) you want. \nAtleast one pizza.")
         return false;
-
     };
 
     // Location validation
@@ -81,14 +73,12 @@ var validateOrder = function () {
 
         alert("Provide the location. \nThis is where your pizza(s) will be delivered to.")
         return false;
-
     };
 
     if (deliveryLocation.length < 5) {
 
-        alert("Provide a valid name! \nAtleast 5 characters to make it easy for deliveries.")
+        alert("Provide a valid location! \nAtleast 5 characters to make it easy for deliveries.")
         return false;
-
     };
 
     //Radio buttons validation
@@ -107,30 +97,6 @@ var validateOrder = function () {
 
 };
 
-// JQuery code for input collection
-
-$(document).ready(function () {
-
-    $("form").submit(function (event) {
-
-        event.preventDefault();
-
-        var name = $("input#customerName").val();
-
-        var selectedType = $("#types option:selected").val();
-
-        var selectedSize = $("#sizes option:selected").val();
-
-        var selectedCrust = $("#crusts option:selected").val();
-
-        var selectedTopping = $("#toppings option:selected").val();
-
-        var amount = parseInt($("input#quantity").val());
-
-    });
-
-});
-
 // constractor and prototyping
 
 var Order = function (name, type, size, crust, topping, quantity) {
@@ -141,7 +107,6 @@ var Order = function (name, type, size, crust, topping, quantity) {
     this.crust = crust;
     this.topping = topping;
     this.quantity = quantity;
-
 };
 
 //Crust pricing
@@ -159,7 +124,6 @@ Order.prototype.crustPrice = function () {
     if (this.crust == 3) {
         return 250;
     };
-
 };
 
 //Toppings pricing
@@ -181,7 +145,6 @@ Order.prototype.toppingPrice = function () {
     if (this.topping == 4) {
         return 350;
     };
-
 };
 
 //Pizza sizes pricing basing on type selected
@@ -202,7 +165,6 @@ Order.prototype.pizzaPrice = function () {
         if (this.size == 3) {
             return 1500;
         };
-
     };
 
     //Veggie pizza
@@ -219,7 +181,6 @@ Order.prototype.pizzaPrice = function () {
         if (this.size == 3) {
             return 2000;
         };
-
     };
 
     //Pepperoni pizza
@@ -236,7 +197,6 @@ Order.prototype.pizzaPrice = function () {
         if (this.size == 3) {
             return 2300;
         };
-
     };
 
     //Meat pizza
@@ -253,7 +213,6 @@ Order.prototype.pizzaPrice = function () {
         if (this.size == 3) {
             return 1400;
         };
-
     };
 
     //Buffalo pizza
@@ -270,7 +229,6 @@ Order.prototype.pizzaPrice = function () {
         if (this.size == 3) {
             return 3000;
         };
-
     };
 
     //Hawaiian pizza
@@ -289,5 +247,38 @@ Order.prototype.pizzaPrice = function () {
         };
 
     };
-
 };
+
+// Creating new object using prototype
+
+$(document).ready(function () {
+
+    $("form").submit(function (event) {
+
+        event.preventDefault();
+
+        var name = $("input#customerName").val();
+
+        var selectedType = parseInt($("#types option:selected").val());
+
+        var selectedSize = parseInt($("#sizes option:selected").val());
+
+        var selectedCrust = parseInt($("#crusts option:selected").val());
+
+        var selectedTopping = parseInt($("#toppings option:selected").val());
+
+        var amount = parseInt($("input#quantity").val());
+
+        // creating a new object
+
+        var newCustomer = new Order (name, selectedType, selectedSize, selectedCrust, selectedTopping, amount);
+
+        // calculating the cost
+
+        var payableAmount = (newCustomer.pizzaPrice() + newCustomer.crustPrice() + newCustomer.toppingPrice()) * amount;
+
+        alert(payableAmount);
+
+    });
+
+});
