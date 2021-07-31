@@ -147,3 +147,27 @@ Order.prototype.crustPrice = function(){
     };
 
 };
+
+//Toppings pricing
+
+Order.prototype.toppingPrice = function(){
+
+    if(this.topping == 1){
+        return 200;
+    };
+
+    if(this.topping == 2){
+        return 250;
+    };
+
+    if(this.topping == 3){
+        return 300;
+    };
+
+    if(this.topping == 4){
+        return 350;
+    };
+
+};
+
+//Pizza sizes pricing
