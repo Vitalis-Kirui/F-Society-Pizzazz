@@ -203,7 +203,7 @@ Order.prototype.pizzaPrice = function(){
         };
 
         if(this.size == 3){
-            return 1200;
+            return 2000;
         };
 
     };
@@ -255,6 +255,23 @@ Order.prototype.pizzaPrice = function(){
 
         if(this.size == 3){
             return 3000;
+        };
+
+    };
+
+    //Hawaiian pizza
+    if(this.type == 6){
+
+        if(this.size == 1){
+            return 450;
+        };
+
+        if(this.size == 2){
+            return 900;
+        };
+
+        if(this.size == 3){
+            return 1200;
         };
 
     };
