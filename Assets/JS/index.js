@@ -46,4 +46,31 @@ var validateOrder = function(){
 
     };
 
+    //toppings select validation
+
+    if(orders.toppings.value == 0){
+
+        alert("Select the type of toppings on your pizza(s) you want to proceed!")
+        return false;
+
+    };
+
+    // Quantity validation
+
+    var numberOfPizza = document.getElementById("quantity").value;
+
+    if(numberOfPizza == ""){
+
+        alert("Please enter the number of pizza(s) you want.")
+        return false;
+
+    };
+
+    if(numberOfPizza < 1){
+
+        alert("Please provide a valid amount of pizza(s) you want. \nAtleast one pizza.")
+        return false;
+
+    };
+
 };
