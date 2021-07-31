@@ -92,3 +92,58 @@ var validateOrder = function(){
     };
 
 };
+
+// JQuery code for input collection
+
+$(document).ready(function(){
+
+    $("form").submit(function(event){
+
+        event.preventDefault();
+
+        var name = $("input#customerName").val();
+
+        var selectedType = $("#types option:selected").val();
+
+        var selectedSize = $("#sizes option:selected").val();
+
+        var selectedCrust = $("#crusts option:selected").val();
+
+        var selectedTopping = $("#toppings option:selected").val();
+
+        var amount = parseInt($("input#quantity").val());
+
+    });
+
+});
+
+// constractor and prototyping
+
+var Order = function(name, type, size, crust, topping, quantity){
+
+    this.name = name;
+    this.type = type;
+    this.size = size;
+    this.crust = crust;
+    this.topping = topping;
+    this.quantity = quantity;
+
+};
+
+//Crust pricing
+
+Order.prototype.crustPrice = function(){
+
+    if(this.crust == 1){
+        return 100;
+    };
+
+    if(this.crust == 2){
+        return 150;
+    };
+
+    if(this.crust == 3){
+        return 250;
+    };
+
+};
