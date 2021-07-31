@@ -225,4 +225,21 @@ Order.prototype.pizzaPrice = function(){
 
     };
 
+    //Meat pizza
+    if(this.type == 4){
+
+        if(this.size == 1){
+            return 600;
+        };
+
+        if(this.size == 2){
+            return 900;
+        };
+
+        if(this.size == 3){
+            return 1400;
+        };
+
+    };
+
 };
