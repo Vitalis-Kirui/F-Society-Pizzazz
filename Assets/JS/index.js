@@ -23,7 +23,7 @@ var validateOrder = function(){
 
     if(orders.types.value == 0){
 
-        alert("Select the type of pizza you want to proceed!")
+        alert("Select the type of pizza(s) you want to proceed!")
         return false;
 
     };
@@ -32,7 +32,16 @@ var validateOrder = function(){
 
     if(orders.sizes.value == 0){
 
-        alert("Select the size of pizza you want to proceed!")
+        alert("Select the size of pizza(s) you want to proceed!")
+        return false;
+
+    };
+
+    //crust selection validation
+
+    if(orders.crusts.value == 0){
+
+        alert("Select the type of crust on your pizza(s) you want to proceed!")
         return false;
 
     };
