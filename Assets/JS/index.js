@@ -242,4 +242,21 @@ Order.prototype.pizzaPrice = function(){
 
     };
 
+    //Buffalo pizza
+    if(this.type == 5){
+
+        if(this.size == 1){
+            return 1200;
+        };
+
+        if(this.size == 2){
+            return 1700;
+        };
+
+        if(this.size == 3){
+            return 3000;
+        };
+
+    };
+
 };
