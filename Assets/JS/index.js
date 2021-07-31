@@ -3,6 +3,8 @@ var validateOrder = function(){
 
     var name = document.getElementById("customerName").value;
 
+    // name validation
+
     if(name == ""){
 
         alert("Please enter your name.")
@@ -13,6 +15,15 @@ var validateOrder = function(){
     if(name.length < 3){
 
         alert("Please provide a valid name. \nAtleast 3 characters.")
+        return false;
+
+    };
+
+    // type of pizza validation
+
+    if(orders.types.value == 0){
+
+        alert("Select the type of pizza you want to proceed!")
         return false;
 
     };

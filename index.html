@@ -197,7 +197,7 @@
 
         <div class="shadow-lg p-3 mb-5 bg-body rounded" id="shadow">
 
-            <form class="makingOrder" onsubmit="validateOrder()">
+            <form class="makingOrder" name="orders" onsubmit="validateOrder()">
 
                 <!-- Name -->
 
@@ -210,7 +210,7 @@
 
                 <label for="name" class="heading">Select type of Pizza:</label>
                 <select class="form-select" aria-label="Default select example" id="types">
-                    <option selected disabled hidden>Open this select pizza</option>
+                    <option selected disabled hidden value="0">Open this select pizza</option>
                     <option value="1">Cheese Pizza</option>
                     <option value="2">Veggie Pizza</option>
                     <option value="3">Pepperoni Pizza</option>
@@ -223,7 +223,7 @@
 
                 <label for="name" class="heading">Select Size</label>
                 <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg" id="sizes">
-                    <option selected hidden disabled>Open here to select the size of the Pizza</option>
+                    <option selected hidden disabled value="0">Open here to select the size of the Pizza</option>
                     <option value="1">Small</Small></option>
                     <option value="2">Medium</option>
                     <option value="3">Large</option>
@@ -233,7 +233,7 @@
 
                 <label for="name" class="heading">Select Crust</label>
                 <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg" id="crusts">
-                    <option selected hidden disabled>Open here to select the kind of crust you want</option>
+                    <option selected hidden disabled value="0">Open here to select the kind of crust you want</option>
                     <option value="1">Crispy</Small></option>
                     <option value="2">Stuffed</option>
                     <option value="3">Gluten free</option>
@@ -243,7 +243,7 @@
 
                 <label for="name" class="heading">Select Toppings</label>
                 <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg" id="toppings">
-                    <option selected hidden disabled>Open here to select the kind of topping you want</option>
+                    <option selected hidden disabled value="0">Open here to select the kind of topping you want</option>
                     <option value="1">Olive</Small></option>
                     <option value="2">Sausage</option>
                     <option value="3">Bacon</option>
