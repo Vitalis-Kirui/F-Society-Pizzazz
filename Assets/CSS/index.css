@@ -174,7 +174,7 @@ h3{
     color: brown;
 }
 
-#orderingName{
+#orderingName, #orderingName2{
     color: blueviolet;
     font-weight: 600;
 }
@@ -186,8 +186,20 @@ h3{
     color: rgb(9, 130, 160);
 }
 
+#appendingName2, #appendingSize2, 
+#appendingTotalCost2, #appendingCrust2, 
+#appendingTopping2, #appendingQuantity2{
+    font-style: italic;
+    color: rgb(9, 130, 160);
+}
+
 .orderCost{
     color: black;
+}
+
+.displayScreen1, .displayScreen2{
+    display: none;
+    padding-top: 20px;
 }
 
 /* footer styles */

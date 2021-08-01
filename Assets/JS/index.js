@@ -285,10 +285,27 @@ $(document).ready(function () {
             $("#appendingQuantity").text($("input#quantity").val());
             $("#appendingTotalCost").text(payableAmount);
     
-    
         $("#confirmOrder").click(function(){
     
-            alert("You order was SUCCESSFULLY placed. \nIt's going to be delivered to you in no time. \nThanks for choosing us.")
+            alert("You order was SUCCESSFULLY placed. \nYou will be served in a moment.\nThanks for choosing us.")
+    
+        });
+
+        var payableAmount = (newCustomer.pizzaPrice() + newCustomer.crustPrice() + newCustomer.toppingPrice()) * amount;
+
+        var netCost = payableAmount + 250;
+
+            $("#orderingName2").text($("input#customerName").val());
+            $("#appendingName2").text($('#types option:selected').text());
+            $("#appendingSize2").text($('#sizes option:selected').text());
+            $("#appendingCrust2").text($('#crusts option:selected').text());
+            $("#appendingTopping2").text($('#toppings option:selected').text());
+            $("#appendingQuantity2").text($("input#quantity").val());
+            $("#appendingTotalCost2").text(netCost);
+    
+        $("#confirmOrder2").click(function(){
+    
+            alert("You order was SUCCESSFULLY placed. \nIt's going to be delivered inside 30 minutes. \nThanks for choosing us.")
     
         });
 
