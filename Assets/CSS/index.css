@@ -1,0 +1,226 @@
+*{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+html{
+    width: 100%;
+}
+
+body{
+    width: 100%;
+    background-color: rgb(226, 226, 226);
+    /* font-family: 'Charm', cursive; */
+}
+
+.container{
+    width: 100%;
+    background-color: rgb(238, 232, 225);
+}
+
+/* Stylings for the navigation bar and its content */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #a57e96;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+.name{
+    font-weight: 600;
+    font-size: 28px;
+    color: rgb(230, 226, 17);
+}
+
+nav ul a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+#navlist {
+    float: right;
+}
+
+#navlist a:hover {
+    color: rgb(251, 255, 0);
+    text-decoration:underline 2px solid black;
+}
+
+/* End of Navigation Bar stylings */
+
+/* introduction styles */
+
+.introduction{
+    font-size: 25px;
+    padding-top: 20px;
+    /* text-align: center; */
+}
+
+h1{
+    text-align: center;
+    font-family: 'Faster One', cursive;
+    color: rgb(129, 38, 110);
+    font-size: 70px;
+}
+
+.stroke{
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+.nameIntro{
+    color: rgb(20, 190, 220);
+}
+
+/* End of introduction styles */
+
+/* tour styles */
+
+.tour1{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    font-size: 25px;
+}
+
+.tour2{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    font-size: 25px;
+}
+
+h2{
+    text-align: center;
+    font-weight: 600;
+    padding-top: 20px;
+    color: crimson;
+}
+
+hr{
+    color: blue;
+    border: 2px solid blue; 
+}
+h5{
+    color: blue;
+    font-size: 30px;
+}
+
+h4{
+    color: rgb(13, 158, 13);
+}
+
+ul{
+    color: rgb(247, 0, 255);
+}
+
+.cost{
+    color: darkblue;
+}
+
+/* end of tour styles */
+
+/* form styles */
+
+#shadow{
+    margin: 23px;
+}
+
+form{
+    padding-right: 200px;
+    padding-left: 200px;
+    font-size: 25px;
+}
+
+::placeholder{
+    font-size: 20px;
+}
+
+.heading, #heading{
+    color: rgb(25, 14, 172);
+    font-weight: 600;
+}
+
+button{
+    border-radius: 20px;
+    background-color: rgb(240, 240, 180);
+    color: blue;
+    font-weight: 600;
+    padding: 5px;
+}
+
+/* displaying order */
+
+.displayScreen{
+    padding: 40px;
+}
+
+h3{
+    font-weight: 600;
+    color: brown;
+}
+
+#orderingName, #orderingName2{
+    color: blueviolet;
+    font-weight: 600;
+}
+
+#appendingName, #appendingSize, 
+#appendingTotalCost, #appendingCrust, 
+#appendingTopping, #appendingQuantity, #deliveryFee{
+    font-style: italic;
+    color: rgb(9, 130, 160);
+}
+
+#appendingName2, #appendingSize2, 
+#appendingTotalCost2, #appendingCrust2, 
+#appendingTopping2, #appendingQuantity2{
+    font-style: italic;
+    color: rgb(9, 130, 160);
+}
+
+.orderCost{
+    color: black;
+}
+
+.displayScreen1, .displayScreen2{
+    display: none;
+    padding-top: 20px;
+}
+
+/* footer styles */
+
+footer {
+    background-color: rgb(107, 107, 133);
+    color: white;
+    text-align: center;
+    padding: 5px;
+    overflow: hidden;
+    font-size: 25px;
+}
+
+.fa {
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.fa:hover {
+    color: rgb(216, 197, 25);
+}
+
+/* end of footer code */
