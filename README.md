@@ -8,7 +8,7 @@ Kipyegon Kirui Vitalis.
 * Below the tour section is the form where interested user fill it out to order a pizza. One got to choose the type of pizza,size,number of pizza, crust and toppings their pizza will have. User also specifies whether their pizza be delivered to them of pick it themselves.
 * Lastly, on the last section of the page having our social media handles. Feel free to follow us or reach out to us there. Thanks.
 # Active link
-This is the link to the project repository on github (to be added)
+This is the link to the project repository on github https://github.com/Vitalis-Kirui/F-Society-Pizzazz
 ## Setup/Installation Requirements
 * Clone the repository from github using the above active link.
 * Go to your favorite text editor and edit it to your prefered use.
@@ -23,4 +23,4 @@ There are no known bugs at the moment. If you experience any, please reach out.
 ## Contact details
 You can reach out here for any assistance: Email:f-society@gmail.com, Phone Number: 0714856555.
 ## License 
-* <a href="#">MIT License</a>
+* <a href="https://github.com/Vitalis-Kirui/F-Society-Pizzazz/blob/master/LICENSE">MIT License</a>

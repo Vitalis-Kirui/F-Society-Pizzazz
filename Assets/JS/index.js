@@ -98,7 +98,7 @@ var validateOrder = function () {
 
         $(document).ready(function(){
 
-            $("#submit").click(function(){
+            $(".place").click(function(){
 
                 $(".displayScreen2").show();
                 $(".displayScreen1").hide();
@@ -112,9 +112,10 @@ var validateOrder = function () {
 
         $(document).ready(function(){
 
-            $("#submit").click(function(){
+            $(".place").click(function(){
 
                 $(".displayScreen1").show();
+                $(".displayScreen2").hide();
 
             });
 
@@ -319,7 +320,7 @@ $(document).ready(function () {
         });
 
         var payableAmount = (newCustomer.pizzaPrice() + newCustomer.crustPrice() + newCustomer.toppingPrice()) * amount;
-
+ 
         var netCost = payableAmount + 250;
 
         $("#orderingName2").text($("input#customerName").val());
