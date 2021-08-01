@@ -65,22 +65,6 @@ var validateOrder = function () {
         return false;
     };
 
-    // Location validation
-
-    var deliveryLocation = document.getElementById("location").value;
-
-    if (deliveryLocation == "") {
-
-        alert("Provide the location. \nThis is where your pizza(s) will be delivered to.")
-        return false;
-    };
-
-    if (deliveryLocation.length < 5) {
-
-        alert("Provide a valid location! \nAtleast 5 characters to make it easy for deliveries.")
-        return false;
-    };
-
     //Radio buttons validation
     var radioYes = document.getElementById("yes").checked;
 
@@ -90,9 +74,52 @@ var validateOrder = function () {
 
         alert("Say if you want your pizza(s) delivered to you or you are picking them yourself!")
         return false;
-        
-    } else {
-        return true;
+
+    };
+
+    if ((radioYes == true && radioNo == false)) {
+
+
+        // Location validation
+
+        var deliveryLocation = document.getElementById("location").value;
+
+        if (deliveryLocation == "") {
+
+            alert("Provide the location. \nThis is where your pizza(s) will be delivered to.")
+            return false;
+        };
+
+        if (deliveryLocation.length < 5) {
+
+            alert("Provide a valid location! \nAtleast 5 characters to make it easy for deliveries.")
+            return false;
+        };
+
+        $(document).ready(function(){
+
+            $("#submit").click(function(){
+
+                $(".displayScreen2").show();
+                $(".displayScreen1").hide();
+
+            });
+
+        });
+    };
+
+    if((radioYes == false && radioNo == true)){
+
+        $(document).ready(function(){
+
+            $("#submit").click(function(){
+
+                $(".displayScreen1").show();
+
+            });
+
+        });
+
     };
 
 };
@@ -271,46 +298,46 @@ $(document).ready(function () {
 
         // creating a new object
 
-        var newCustomer = new Order (name, selectedType, selectedSize, selectedCrust, selectedTopping, amount);
+        var newCustomer = new Order(name, selectedType, selectedSize, selectedCrust, selectedTopping, amount);
 
         // calculating the cost
 
         var payableAmount = (newCustomer.pizzaPrice() + newCustomer.crustPrice() + newCustomer.toppingPrice()) * amount;
 
-            $("#orderingName").text($("input#customerName").val());
-            $("#appendingName").text($('#types option:selected').text());
-            $("#appendingSize").text($('#sizes option:selected').text());
-            $("#appendingCrust").text($('#crusts option:selected').text());
-            $("#appendingTopping").text($('#toppings option:selected').text());
-            $("#appendingQuantity").text($("input#quantity").val());
-            $("#appendingTotalCost").text(payableAmount);
-    
-        $("#confirmOrder").click(function(){
-    
+        $("#orderingName").text($("input#customerName").val());
+        $("#appendingName").text($('#types option:selected').text());
+        $("#appendingSize").text($('#sizes option:selected').text());
+        $("#appendingCrust").text($('#crusts option:selected').text());
+        $("#appendingTopping").text($('#toppings option:selected').text());
+        $("#appendingQuantity").text($("input#quantity").val());
+        $("#appendingTotalCost").text(payableAmount);
+
+        $("#confirmOrder").click(function () {
+
             alert("You order was SUCCESSFULLY placed. \nYou will be served in a moment.\nThanks for choosing us.")
-    
+
         });
 
         var payableAmount = (newCustomer.pizzaPrice() + newCustomer.crustPrice() + newCustomer.toppingPrice()) * amount;
 
         var netCost = payableAmount + 250;
 
-            $("#orderingName2").text($("input#customerName").val());
-            $("#appendingName2").text($('#types option:selected').text());
-            $("#appendingSize2").text($('#sizes option:selected').text());
-            $("#appendingCrust2").text($('#crusts option:selected').text());
-            $("#appendingTopping2").text($('#toppings option:selected').text());
-            $("#appendingQuantity2").text($("input#quantity").val());
-            $("#appendingTotalCost2").text(netCost);
-    
-        $("#confirmOrder2").click(function(){
-    
+        $("#orderingName2").text($("input#customerName").val());
+        $("#appendingName2").text($('#types option:selected').text());
+        $("#appendingSize2").text($('#sizes option:selected').text());
+        $("#appendingCrust2").text($('#crusts option:selected').text());
+        $("#appendingTopping2").text($('#toppings option:selected').text());
+        $("#appendingQuantity2").text($("input#quantity").val());
+        $("#appendingTotalCost2").text(netCost);
+
+        $("#confirmOrder2").click(function () {
+
             alert("You order was SUCCESSFULLY placed. \nIt's going to be delivered inside 30 minutes. \nThanks for choosing us.")
-    
+
         });
 
     });
 
-    
+
 
 });

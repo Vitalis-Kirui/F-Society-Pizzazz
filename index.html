@@ -257,19 +257,27 @@
 
                 <!-- Delivery -->
 
-                <label for="deliver" class="heading">Do you want your order delivered?</label>
-                <div>
-                    <input type="radio" id="yes" name="deliver">
-                    <label for="no">Yes</label>
-                    <input type="radio" id="no" name="deliver">
-                    <label for="no">No</label>
+                <div class="radios">
+
+                    <label for="deliver" class="heading">Do you want your order delivered?</label>
+                    <div>
+                        <input type="radio" id="yes" name="deliver">
+                        <label for="no">Yes</label>
+                        <input type="radio" id="no" name="deliver">
+                        <label for="no">No</label>
+                    </div>
+
                 </div>
 
                 <!-- Location input -->
 
-                <label for="name" class="heading">Please enter your Location</label>
-                <input type="text" class="form-control form-select-lg mb-3" placeholder="Example: Prestige" name=""
-                    id="location">
+                <div class="location">
+
+                    <label for="name" class="heading">Please enter your Location</label>
+                    <input type="text" class="form-control form-select-lg mb-3" placeholder="Example: Prestige" name=""
+                        id="location">
+
+                </div>
 
                 <!-- submit button -->
 
@@ -288,8 +296,10 @@
                         <li><strong>Pizza Size: </strong><span id="appendingSize">Size of Pizza comes here</span> </li>
                         <li><strong>Crust: </strong><span id="appendingCrust">Crust name comes here</span> </li>
                         <li><strong>Toppings: </strong><span id="appendingTopping">Toppings comes here</span> </li>
-                        <li><strong>Quantity: </strong><span id="appendingQuantity">Number of Pizza comes here</span> </li>
-                        <li><strong>Total Cost: </strong>Ksh. <span id="appendingTotalCost">Cost of pizza comes here</span> </li>
+                        <li><strong>Quantity: </strong><span id="appendingQuantity">Number of Pizza comes here</span>
+                        </li>
+                        <li><strong>Total Cost: </strong>Ksh. <span id="appendingTotalCost">Cost of pizza comes
+                                here</span> </li>
                     </ul>
 
                     <button id="confirmOrder">Confirm Order</button>
@@ -307,9 +317,11 @@
                         <li><strong>Pizza Size: </strong><span id="appendingSize2">Size of Pizza comes here</span> </li>
                         <li><strong>Crust: </strong><span id="appendingCrust2">Crust name comes here</span> </li>
                         <li><strong>Toppings: </strong><span id="appendingTopping2">Toppings comes here</span> </li>
-                        <li><strong>Quantity: </strong><span id="appendingQuantity2">Number of Pizza comes here</span> </li>
+                        <li><strong>Quantity: </strong><span id="appendingQuantity2">Number of Pizza comes here</span>
+                        </li>
                         <li><strong>Delivery Fee: </strong>Ksh. <span id="deliveryFee">250</span></li>
-                        <li><strong>Total Cost: </strong>Ksh. <span id="appendingTotalCost2">Cost of pizza comes here</span> </li>
+                        <li><strong>Total Cost: </strong>Ksh. <span id="appendingTotalCost2">Cost of pizza comes
+                                here</span> </li>
                     </ul>
 
                     <button id="confirmOrder2">Confirm Order</button>
